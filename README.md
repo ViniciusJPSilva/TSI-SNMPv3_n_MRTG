@@ -126,6 +126,12 @@
 
 6. **Utilização do Script de Configuração e Monitoramento**
 
+    Primeiramente, dê as devidas permissões de execução para o script `auth.sh`:
+
+    ```bash
+    chmod +x auth.sh
+    ```
+
    O script `auth.sh` é utilizado para configurar e gerenciar o monitoramento via SNMPv3 com MRTG. O script oferece três opções de operação:
 
    ```bash

@@ -147,7 +147,7 @@ snmp_start() {
 
 Interval: 60
 Language: brazilian
-LoadMIBs: /usr/local/share/snmp/mibs/UCD-SNMP-MIB.txt
+LoadMIBs: /usr/share/snmp/mibs/UCD-SNMP-MIB.txt
 
 ### Memória livre
 Target[freemem]: .1.3.6.1.4.1.2021.4.6.0&.1.3.6.1.4.1.2021.4.6.0:public@$SERVER_IP:::::3
@@ -166,20 +166,20 @@ LegendO[freemem]:
 Legend1[freemem]: Memória RAM livre
 
 ### CPU
-Target[cpu]: .1.3.6.1.4.1.2021.11.50.0&.1.3.6.1.4.1.2021.11.50.0:public@$SERVER_IP:::::3 + .1.3.6.1.4.1.2021.11.51.0&.1.3.6.1.4.1.2021.11.51.0:public@$SERVER_IP:::::3 + .1.3.6.1.4.1.2021.11.52.0&.1.3.6.1.4.1.2021.11.52.0:public@$SERVER_IP:::::3
+Target[cpu]:.1.3.6.1.4.1.2021.11.50.0&.1.3.6.1.4.1.2021.11.52.0:public@$SERVER_IP:::::3
 SnmpOptions[cpu]: privprotocol=>'aes',authpassword=>'$AUTHPASS',username=>'$USER',privpassword=>'$PRIVKEY',authprotocol=>'sha'
 MaxBytes[cpu]: 100
 Title[cpu]: Uso da CPU
 PageTop[cpu]: <H1>Uso da CPU (%)</H1>
 ShortLegend[cpu]: %
 YLegend[cpu]: Porcentagem (%)
-Legend1[cpu]: Uso ativo da CPU (%)
-Legend2[cpu]:
+Legend1[cpu]: Uso ativo da CPU do Usuário (%)
+Legend2[cpu]: Uso ativo da CPU do Sistema (%)
 Legend3[cpu]:
 Legend4[cpu]:
-LegendI[cpu]: CPU Ativa
-LegendO[cpu]:
-Options[cpu]: growright, gauge, nopercent
+LegendI[cpu]: CPU Ativa (Usuário)
+LegendO[cpu]: CPU Ativa (Sistema)
+Options[cpu]: growright,nopercent
 
 ### Disk
 Target[disk]: .1.3.6.1.4.1.2021.9.1.9.1&.1.3.6.1.4.1.2021.9.1.9.2:public@$SERVER_IP:::::3

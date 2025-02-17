@@ -10,6 +10,16 @@
 
 <br><hr><br>
 
+## Pré-requisitos
+
+<div align="justify">
+  Antes de iniciar a configuração e monitoramento com SNMPv3 e MRTG, é necessário ter um servidor web (Apache, Nginx, ou similar) configurado e em funcionamento no <strong>cliente</strong>. O diretório base onde os arquivos index serão gerados e acessados via navegador será em <strong>/var/www/html/mrtg</strong> . Certifique-se de que o servidor web esteja instalado e configurado corretamente para permitir o acesso aos gráficos gerados pelo MRTG.
+<br><br>
+Certifique-se de que o servidor web esteja instalado e configurado corretamente para permitir o acesso aos gráficos gerados pelo MRTG.
+</div>
+
+<br><hr><br>
+
 ## Procedimentos para Configuração e Monitoramento com SNMPv3 e MRTG
 
 ### Configuração do Servidor

@@ -22,7 +22,7 @@ Certifique-se de que o servidor web esteja instalado e configurado corretamente 
 
 ## Procedimentos para Configuração e Monitoramento com SNMPv3 e MRTG
 
-### Configuração do Servidor
+### Configuração do Agente (Servidor)
 
 <br>
 
@@ -80,7 +80,7 @@ Certifique-se de que o servidor web esteja instalado e configurado corretamente 
 
 <br><br>
 
-### Configuração do Cliente
+### Configuração do Gerente (Cliente)
 
 <br>
 
